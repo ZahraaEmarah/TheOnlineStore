@@ -30,7 +30,7 @@ app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
 app.use('/auth', authRouter);
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     const url =
     'mongodb+srv://admin:admin@myonlinestore.6pt7m8a.mongodb.net/?retryWrites=true&w=majority';
   const dbName = 'TheOnlineStore';
