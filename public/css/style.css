@@ -1,7 +1,11 @@
 .card{
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 300px;
     margin: 20px !important;
+}
+
+.card-img{
+    max-width: 100%;
 }
 
 a{

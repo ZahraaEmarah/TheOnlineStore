@@ -36,11 +36,16 @@
     <h3 class="m-3">
       <%=product.title%>
     </h3>
+    <h4>
+      <%=product.brand%>
+    </h4>
 
-    <div>
-      <button onclick="next()"><</button>
-      <img id="display" height="300px" width="300px" src=<%=product.images[0]%>>
-      <button>></button>
+    <div class="row">
+      <%product.images.map((img)=> {%>
+        <div class="card">
+          <img height="300" width="300" src="<%=img%>">
+        </div>
+        <%})%>
     </div>
 
     <h2>
@@ -52,7 +57,9 @@
       <%=product.rating%>
     </h4>
 
-    <h4><%=product.description%></h4>
+    <h4>
+      <%=product.description%>
+    </h4>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
